@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+       android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"/>
+    <item android:title="Calculator"
+        android:icon="@drawable/baseline_calculate_24"
+        android:id="@+id/Calculator"/>
+    <item android:title="Steps"
+        android:icon="@drawable/baseline_do_not_step_24"
+        android:id="@+id/steps"/>
+    <item android:title="Heart Rate"
+        android:icon="@drawable/baseline_monitor_heart_24"
+        android:id="@+id/heart"/>
+    <item android:title="Exercises"
+        android:icon="@drawable/baseline_sports_gymnastics_24"
+        android:id="@+id/exercises"/>
+</menu>

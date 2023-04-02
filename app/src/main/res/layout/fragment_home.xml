@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="HomeFragment"
+    android:background="#16D3FD">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-320dp"
+        android:background="@drawable/square_shape"
+        android:gravity="center"
+        android:text="Fitness And Health"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-200dp"
+        android:background="@drawable/shapes_main_sq"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="107dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Health Calculator"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/doc" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shapes_main_sq"
+        android:layout_marginTop="-30dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Walk and Steps"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shapes_main_sq"
+        android:layout_marginTop="140dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Heart Rate"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="158dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:src="@drawable/heart"
+            android:layout_marginTop="12dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@drawable/shapes_main_sq"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="-90dp"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="08dp"
+            android:text="Water Intake"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@drawable/shapes_main_sq"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="90dp"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="08dp"
+            android:text="Exercises"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
