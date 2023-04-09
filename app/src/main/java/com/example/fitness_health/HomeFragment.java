@@ -1,12 +1,18 @@
 package com.example.fitness_health;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +23,7 @@ public class HomeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private CardView hCal;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -46,6 +53,8 @@ public class HomeFragment extends Fragment {
         return fragment;
     }
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +68,25 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+
+        View view =  inflater.inflate(R.layout.fragment_home, container, false);
+//
+//        hCal = view.findViewById(R.id.HealthCard);
+//
+//        hCal.setOnClickListener(new View.OnClickListener(){
+//
+//            public void onClick(View view){
+//                Toast.makeText(getActivity(), "Hello", Toast.LENGTH_SHORT).show();
+//
+//
+//            }
+//        });
+
+        return view;
+
     }
+
+//public void tostmsg(View view){
+//    Toast.makeText(getActivity(), "click", Toast.LENGTH_SHORT).show();
+//}
 }

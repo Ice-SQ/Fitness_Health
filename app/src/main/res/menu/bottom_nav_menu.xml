@@ -13,7 +13,7 @@
     <item android:title="Heart Rate"
         android:icon="@drawable/baseline_monitor_heart_24"
         android:id="@+id/heart"/>
-    <item android:title="Exercises"
-        android:icon="@drawable/baseline_sports_gymnastics_24"
-        android:id="@+id/exercises"/>
+    <item android:title="Maps"
+        android:icon="@drawable/baseline_fmd_good_24"
+        android:id="@+id/maps"/>
 </menu>

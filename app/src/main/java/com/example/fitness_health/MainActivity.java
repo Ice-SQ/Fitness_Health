@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.heart:
                     replaceFragment(new HeartRateFragment());
                     break;
-                case R.id.exercises:
-                    replaceFragment(new ExercisesFragment());
+                case R.id.maps:
+                    replaceFragment(new GoogleMapsFragment());
                     break;
 
 

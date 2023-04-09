@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculatorFragment"
@@ -18,24 +19,148 @@
         android:textSize="26dp"
         android:textStyle="bold" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/heightTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Height"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+
+
+            />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:hint="CM"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/weightTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Weight"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+
+
+            />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:hint="KG"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genderlayout"
+        android:layout_below="@+id/data"
+        android:orientation="horizontal">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/txtmale"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Male"
+           android:textColor="@color/white"
+           android:textSize="15dp"
+           android:textStyle="normal"
+           android:layout_marginTop="410dp"
+           android:gravity="center"
+           />
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+           android:src="@drawable/baseline_boy_24"
+           android:id="@+id/male_img"/>
+       
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtfemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:layout_marginTop="410dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/baseline_girl_24"
+            android:id="@+id/female_img"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/btn"
+    android:text="Calculate"
+    android:layout_marginTop="550dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/black"
+    android:textStyle="bold"
+
+
+    />
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MALE"
-        android:layout_marginTop="200dp"
-        android:textSize="26dp"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"/>
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#0F8814"
+        android:id="@+id/result"
+        android:layout_marginTop="630dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginLeft="100dp"
-       android:outlineAmbientShadowColor="@color/cardview_dark_background"
-
-        />
 
 </FrameLayout>
