@@ -1,17 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ExercisesFragment"
     android:background="#16D3FD">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Exer_fragment"
-        android:textSize="26dp"/>
+        tools:context=".ExercisesFragment">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-920dp"
+            android:background="@drawable/square_shape"
+            android:gravity="center"
+            android:text="Exercises"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp" />
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="388dp" />
+
+        <VideoView
+            android:id="@+id/videoView3"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="626dp" />
+
+        <VideoView
+            android:id="@+id/videoView4"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="864dp" />
+
+        <VideoView
+            android:id="@+id/videoView5"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1102dp" />
+        <VideoView
+            android:id="@+id/videoView6"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1344dp" />
+        <VideoView
+            android:id="@+id/videoView7"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1584dp" />
+
+        <VideoView
+            android:id="@+id/videoView8"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1832dp" />
+
+    </FrameLayout>
+</ScrollView>

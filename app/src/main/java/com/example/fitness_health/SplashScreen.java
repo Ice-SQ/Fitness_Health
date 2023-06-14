@@ -12,15 +12,16 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        // Create a new Handler object to delay the execution of code
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+                // Create an Intent to start the LoginActivity
+                Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
                 startActivity(intent);
-
-
+                finish(); // Finish the SplashScreen activity so it is not accessible via back button
             }
-        },5000);
-
+        }, 3000); // Delay the execution of code inside run() by 3000 milliseconds (3 seconds)
     }
 }

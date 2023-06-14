@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitness_Health"
         tools:targetApi="31">
-
+        <activity
+            android:name=".AddNotes"
+            android:exported="false" />
+        <activity
+            android:name=".NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterIntakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".StepDatabaseHelper"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -41,11 +62,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -10,9 +10,9 @@
     <item android:title="Steps"
         android:icon="@drawable/baseline_do_not_step_24"
         android:id="@+id/steps"/>
-    <item android:title="Heart Rate"
-        android:icon="@drawable/baseline_monitor_heart_24"
-        android:id="@+id/heart"/>
+    <item android:title="Exercies"
+        android:icon="@drawable/baseline_sports_gymnastics_24"
+        android:id="@+id/Exercies"/>
     <item android:title="Maps"
         android:icon="@drawable/baseline_fmd_good_24"
         android:id="@+id/maps"/>

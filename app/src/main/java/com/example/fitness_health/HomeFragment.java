@@ -1,92 +1,105 @@
 package com.example.fitness_health;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class HomeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private CardView hCal;
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private CardView steps;
+    private CardView notes;
+    private CardView waterIntake;
+    private CardView Exercises;
+    private BottomNavigationView bottomNavigationView;
 
     public HomeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+    public static HomeFragment newInstance() {
+        return new HomeFragment();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        View view =  inflater.inflate(R.layout.fragment_home, container, false);
-//
-//        hCal = view.findViewById(R.id.HealthCard);
-//
-//        hCal.setOnClickListener(new View.OnClickListener(){
-//
-//            public void onClick(View view){
-//                Toast.makeText(getActivity(), "Hello", Toast.LENGTH_SHORT).show();
-//
-//
-//            }
-//        });
+        // Initialize CardViews and BottomNavigationView
+        hCal = view.findViewById(R.id.HealthCard);
+        steps = view.findViewById(R.id.StepsCard);
+        notes = view.findViewById(R.id.NotesCard);
+        waterIntake = view.findViewById(R.id.WaterIntakeCardview);
+        Exercises = view.findViewById(R.id.ExercisesCardView);
+
+        hCal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create CalculatorFragment instance
+                Fragment fragment = new CalculatorFragment();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.Home, fragment); // Replace the current fragment with CalculatorFragment
+                transaction.addToBackStack(null);
+                transaction.commit();
+                // Set the selected item in the BottomNavigationView to Calculator
+                ((MainActivity) requireActivity()).setSelectedItem(R.id.Calculator);
+            }
+        });
+
+        steps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create StepsFragment instance
+                Fragment fragment = new StepsFragment();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.Home, fragment); // Replace the current fragment with StepsFragment
+                transaction.addToBackStack(null);
+                transaction.commit();
+                // Set the selected item in the BottomNavigationView to Steps
+                ((MainActivity) requireActivity()).setSelectedItem(R.id.steps);
+            }
+        });
+
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Start the NotesActivity
+                Intent intent = new Intent(getActivity(), NotesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        waterIntake.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Start the WaterIntakeActivity
+                Intent intent = new Intent(getActivity(), WaterIntakeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Exercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create ExercisesFragment instance
+                Fragment fragment = new ExercisesFragment();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.Home, fragment); // Replace the current fragment with ExercisesFragment
+                transaction.addToBackStack(null);
+                transaction.commit();
+                // Set the selected item in the BottomNavigationView to Exercises
+                ((MainActivity) requireActivity()).setSelectedItem(R.id.Exercies);
+            }
+        });
 
         return view;
-
     }
-
-//public void tostmsg(View view){
-//    Toast.makeText(getActivity(), "click", Toast.LENGTH_SHORT).show();
-//}
 }

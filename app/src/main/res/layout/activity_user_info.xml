@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_cover"
+    tools:context=".UserInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/UserFNameText"
+                android:text="Enter Your First Name"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/UserFName"
+                android:background="@drawable/login_boder"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="First Name"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/UserLNameText"
+                android:text="Enter Your Last Name"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/LUserName"
+                android:background="@drawable/login_boder"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Last Name"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
+
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserBirth"
+            android:text="Enter Your Birthday"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/UserBirthDay"
+                android:background="@drawable/login_boder"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Birthday"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WaterIntakeText"
+                android:text="Enter Your WaterIntakeText"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/WaterIntake"
+                android:background="@drawable/login_boder"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Water Intake"
+                android:drawableLeft="@drawable/baseline_water_drop_24"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/Go"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Save"
+                android:textSize="20dp"
+                app:cornerRadius="30dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_200"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

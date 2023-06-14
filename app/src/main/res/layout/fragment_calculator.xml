@@ -92,7 +92,8 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_weight="1"
-       android:orientation="vertical">
+       android:orientation="vertical"
+       android:id="@+id/m_layout">
        <TextView
            android:id="@+id/txtmale"
            android:layout_width="match_parent"
@@ -115,7 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/f_layout">
         <TextView
             android:id="@+id/txtfemale"
             android:layout_width="match_parent"
@@ -149,6 +151,21 @@
 
 
     />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#0F8814"
+        android:id="@+id/condition"
+        android:layout_marginTop="630dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
