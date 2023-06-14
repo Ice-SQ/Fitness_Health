@@ -26,7 +26,7 @@ public class UserInfo extends AppCompatActivity implements DatePickerDialog.OnDa
     private Button saveButton;
     private DatabaseHelper databaseHelper;
     private int year, month, day;
-// git
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
